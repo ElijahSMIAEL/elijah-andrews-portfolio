@@ -1,0 +1,38 @@
+#about-body {
+  margin: 0px;
+  display: grid;
+  grid-template-rows: 50% 50% ;
+  background-color: #717744;
+}
+#about-header {
+  text-align: center;
+  font-size: 50px;
+  margin-top: 60px;
+}
+#profile-pic {
+  height: 200px;
+}
+#about-top {
+  display: grid;
+  justify-content: center;
+  margin: 0px;
+  grid-row: 1 / 2;
+  background: url("/Images/File_010.jpeg");
+  background-size:cover;
+  height: 400px;
+}
+#about-bottom {
+  margin: 20px;
+  height: 550px;
+  background-color: #766153;
+  border-radius: 20px;
+}
+.about-bio {
+  text-align: center;
+  margin: 20px;
+  padding: 75px;
+  font-size: 26px;
+  background-color: #e9ecef;
+  border: double 10px #84d2f6;
+  border-radius: 20px;
+}
