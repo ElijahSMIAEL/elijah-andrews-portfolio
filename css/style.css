@@ -3,7 +3,16 @@
   display: grid;
   grid-template-columns: 20% auto;
   grid-template-rows: 15% auto;
-  background-color: #e9ecef;
+  background-color: #6c757d;
+}
+#home-img {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  height: 815px;
+  width: 1400px;
+  margin: 35px;
+  border-radius: 50px;
+  border: double 10px;
 }
 .previews {
   display: inherit;
@@ -17,6 +26,7 @@
   margin: 0px;
   padding: 15px;
   border-bottom: double 10px;
+  box-shadow: 10px 10px 10px #212529;
 }
 .icon {
   height: 130px;
@@ -39,6 +49,7 @@
   border-bottom-right-radius: 60px;
   border-bottom: double 10px;
   border-right: double 10px;
+  box-shadow: 10px 10px 10px #212529;
 }
 
 #about-body {
@@ -75,7 +86,7 @@
 .about-bio {
   text-align: center;
   margin: 20px;
-  padding: 55px;
+  padding: 70px;
   font-size: 26px;
   background-color: #e9ecef;
   border: double 10px #84d2f6;
