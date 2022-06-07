@@ -85,3 +85,21 @@
   border: double 10px #606c38;
   border-radius: 20px;
 }
+
+#work-body {
+  margin: 0;
+  display: grid;
+  grid-template-rows: 75% auto;
+  grid-template-columns: 1fr 1fr;
+}
+#work-top {
+  background: url(/Images/File_002.jpeg);
+  height: 700px;
+  width: 1900px;
+  background-size: cover;
+}
+#work-header {
+  text-align: center;
+  margin-top: 150px;
+  font-size: 50px;
+}
