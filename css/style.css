@@ -147,3 +147,12 @@
   height: 100vh;
   background-size: cover;
 }
+.home-button {
+  background-color: #f8f9fa;
+  width: 6vw;
+  font-size: 32px;
+  padding: 10px;
+  border: solid 3px #606c38;
+  box-shadow: 10px 10px 10px black;
+  color: black;
+}
