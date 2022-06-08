@@ -96,13 +96,13 @@
 #work-top {
   background-size: cover;
 }
-#work-header, #contact-header {
+#resume-header, #work-header, #contact-header {
   text-align: center;
   font-family: 'Nuosu SIL', serif;
   margin-top: 150px;
   font-size: 100px;
 }
-#work-bottom, #contact-bottom {
+#resume-bottom, #work-bottom, #contact-bottom {
   display: flex;
   justify-content: center;
   position: absolute ; bottom: 0;
@@ -112,14 +112,14 @@
   background-color: rgba(210, 210, 210, 0.6);
   border-top:solid black;
 }
-.works {
+.resumes, .works {
   margin: 20px 10px 80px;
   background-color: #ffffff;
   width: fit-content;
   border: solid black;
   box-shadow: 10px 10px 10px black;
 }
-.work-prev {
+.resume-prev, .work-prev {
   background-color: black;
   padding: 10px;
   height: 200px;
@@ -139,4 +139,11 @@
   border-radius: 20px;
   height: 200px;
   margin: 60px;
+}
+#resume-body {
+  background: url(../Images/ResumeBackground.jpeg);
+  margin: 0px;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
 }
