@@ -156,3 +156,17 @@ align-items: center;
   color: #f8f9fa;
 }
 
+@media only screen and (max-width: 1550px){
+  #profile-pic {
+    height: 130px;
+  }
+  .about-bio {
+    font-size: 18px;
+  }
+  .home-button {
+    font-size: 20px;
+  }
+  .dark-light-button {
+    font-size: 20px;
+  }
+}
