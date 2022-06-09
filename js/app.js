@@ -8,16 +8,30 @@ let bioText = document.querySelectorAll('.about-bio')
 let secondaryTop = document.querySelector('.secondary-top')
 let secondaryBottom = document.querySelector('.secondary-bottom')
 let secondaryHeader = document.querySelector('.secondary-header')
+let homeButton = document.querySelector('.home-button')
 
 toggleModeButton.addEventListener('click', darkModeToggle)
 
 function darkModeToggle(evt) {
   localStorage.setItem("darkMode" , localStorage.darkMode === 'dark' ? 'light' : 'dark')
-  darkModeSetHome()
-  darkModeSetAbout()
-  darkModeSetContact()
-  darkModeSetWork()
-  darkModeSetResume()
+  darkModeRender()
+}
+function darkModeRender() {
+  if(homeBody.id === 'home-body') {
+    darkModeSetHome()
+  }
+  if(homeBody.id === 'about-body') {
+    darkModeSetAbout()
+  }
+  if(homeBody.id === 'work-body'){
+    darkModeSetWork()
+  }
+  if(homeBody.id === 'contact-body') {
+    darkModeSetContact()
+  }
+  if(homeBody.id === 'resume-body') {
+    darkModeSetResume()
+  }
 }
 
 function darkModeSetHome() {
@@ -41,38 +55,68 @@ function darkModeSetHome() {
 }
 function darkModeSetAbout() {
   if (localStorage.darkMode === 'dark') {
+    homeBody.classList.add("dark-mode-body")
+    homeButton.classList.add("dark-mode")
     homeHeader.classList.add("dark-mode")
     toggleModeButton.classList.add("dark-mode")
+    secondaryHeader.classList.add("dark-mode-header")
     bioText.forEach(element => {
       element.classList.add("dark-mode")
     })
   } else {
-
+    homeBody.classList.remove("dark-mode-body")
+    homeButton.classList.remove("dark-mode")
+    homeHeader.classList.remove("dark-mode")
+    toggleModeButton.classList.remove("dark-mode")
+    secondaryHeader.classList.remove("dark-mode-header")
+    bioText.forEach(element => {
+      element.classList.remove("dark-mode")
+    })
   }
 }
 function darkModeSetWork() {
   if (localStorage.darkMode === 'dark') {
-
+    homeBody.classList.add("dark-mode-body")
+    homeButton.classList.add("dark-mode")
+    homeHeader.classList.add("dark-mode")
+    toggleModeButton.classList.add("dark-mode")
+    secondaryHeader.classList.add("dark-mode-header")
   } else {
-
+    homeBody.classList.remove("dark-mode-body")
+    homeButton.classList.remove("dark-mode")
+    homeHeader.classList.remove("dark-mode")
+    toggleModeButton.classList.remove("dark-mode")
+    secondaryHeader.classList.remove("dark-mode-header")
   }
 }
 function darkModeSetContact() {
   if (localStorage.darkMode === 'dark') {
-
+    homeBody.classList.add("dark-mode-body")
+    homeButton.classList.add("dark-mode")
+    homeHeader.classList.add("dark-mode")
+    toggleModeButton.classList.add("dark-mode")
+    secondaryHeader.classList.add("dark-mode-header")
   } else {
-
+    homeBody.classList.remove("dark-mode-body")
+    homeButton.classList.remove("dark-mode")
+    homeHeader.classList.remove("dark-mode")
+    toggleModeButton.classList.remove("dark-mode")
+    secondaryHeader.classList.remove("dark-mode-header")
   }
 }
 function darkModeSetResume() {
   if (localStorage.darkMode === 'dark') {
-
+    homeBody.classList.add("dark-mode-body")
+    homeButton.classList.add("dark-mode")
+    homeHeader.classList.add("dark-mode")
+    toggleModeButton.classList.add("dark-mode")
+    secondaryHeader.classList.add("dark-mode-header")
   } else {
-
+    homeBody.classList.remove("dark-mode-body")
+    homeButton.classList.remove("dark-mode")
+    homeHeader.classList.remove("dark-mode")
+    toggleModeButton.classList.remove("dark-mode")
+    secondaryHeader.classList.remove("dark-mode-header")
   }
 }
-darkModeSetHome()
-darkModeSetAbout()
-darkModeSetWork()
-darkModeSetContact()
-darkModeSetResume()
+darkModeRender()
