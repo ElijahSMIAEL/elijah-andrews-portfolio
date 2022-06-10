@@ -65,7 +65,6 @@ function darkModeSetAbout() {
     homeHeader.classList.add("dark-mode")
     toggleModeButton.classList.add("dark-mode")
     secondaryHeader.classList.add("dark-mode-header")
-    secondaryBottom.classList.add("dark-mode-bottom")
     bioText.forEach(element => {
       element.classList.add("dark-mode")
     })
@@ -76,7 +75,6 @@ function darkModeSetAbout() {
     homeHeader.classList.remove("dark-mode")
     toggleModeButton.classList.remove("dark-mode")
     secondaryHeader.classList.remove("dark-mode-header")
-    secondaryBottom.classList.remove("dark-mode-bottom")
     bioText.forEach(element => {
       element.classList.remove("dark-mode")
     })
@@ -146,4 +144,9 @@ profilePic.addEventListener('click', function(evt) {
   }, 1500)
 }, false)
 
+profilePic.addEventListener('click', function(evt) {
+  bioText.forEach(element => {
+    element.removeAttribute('hidden')
+  })
+})
 
