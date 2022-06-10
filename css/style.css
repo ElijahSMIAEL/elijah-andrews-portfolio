@@ -169,4 +169,30 @@ align-items: center;
   .dark-light-button {
     font-size: 20px;
   }
+  .icon {
+    height: 80px;
+    padding: 15px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .preview-sidebar {
+    width: 40vw;
+  }
+  .icon {
+    width: 15vw;
+  }
+  .dark-light-button {
+    width: 40vw;
+  }
+  .about-bio {
+    font-size: 15px;
+    margin: 5px;
+  }
+  .home-button {
+    font-size: 10px;
+    padding: 3px;
+  }
+  .contacts-prev {
+    height: 150px;
+  }
 }
