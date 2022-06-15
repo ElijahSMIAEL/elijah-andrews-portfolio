@@ -12,9 +12,15 @@ let homeButton = document.querySelector('.home-button')
 let fileDisplay = document.querySelector('.file-display')
 let profilePic = document.querySelector('#profile-pic')
 let hiddenMsg = document.querySelector('.hidden-message')
+let contact = document.querySelector('.contacts')
 
-
+contact.addEventListener('mouseover', contactBounce)
 toggleModeButton.addEventListener('click', darkModeToggle)
+
+
+function contactBounce(evt) {
+  
+}
 
 function darkModeToggle(evt) {
   localStorage.setItem("darkMode" , localStorage.darkMode === 'dark' ? 'light' : 'dark')
