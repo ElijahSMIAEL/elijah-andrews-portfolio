@@ -12,14 +12,19 @@ let homeButton = document.querySelector('.home-button')
 let fileDisplay = document.querySelector('.file-display')
 let profilePic = document.querySelector('#profile-pic')
 let hiddenMsg = document.querySelector('.hidden-message')
-let contact = document.querySelector('.contacts')
+let contacts = document.querySelectorAll('.contacts')
 
-contact.addEventListener('mouseover', contactBounce)
+contacts.forEach(contact => {
+  contact.addEventListener('mouseover', contactHighlight)
+})
 toggleModeButton.addEventListener('click', darkModeToggle)
 
 
-function contactBounce(evt) {
-  
+function contactHighlight(evt) {
+  evt.target.style.backgroundColor= 'aqua'
+  setTimeout(function() {
+    evt.target.style.backgroundColor=''
+  }, 500)
 }
 
 function darkModeToggle(evt) {
@@ -88,7 +93,6 @@ function darkModeSetAbout() {
 }
 function darkModeSetWork() {
   if (localStorage.darkMode === 'dark') {
-    fileDisplay.classList.add("dark-mode-content")
     homeBody.classList.add("dark-mode-body")
     homeButton.classList.add("dark-mode")
     homeHeader.classList.add("dark-mode")
@@ -96,7 +100,6 @@ function darkModeSetWork() {
     secondaryHeader.classList.add("dark-mode-header")
     secondaryBottom.classList.add("dark-mode-bottom")
   } else {
-    fileDisplay.classList.remove("dark-mode-content")
     homeBody.classList.remove("dark-mode-body")
     homeButton.classList.remove("dark-mode")
     homeHeader.classList.remove("dark-mode")
