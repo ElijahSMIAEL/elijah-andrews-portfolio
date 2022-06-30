@@ -126,6 +126,10 @@ align-items: center;
   height: 200px;
   margin: 10px 20px;
 }
+.contacts {
+  padding: 20px;
+  margin-bottom: 75px;
+}
 .contacts-prev {
   box-shadow: 10px 10px 10px black;
   border-radius: 20px;
