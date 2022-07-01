@@ -10,7 +10,7 @@ const works = [
     name: 'Gamers Assemble',
     deployed: 'https://gamers-assembly.herokuapp.com/',
     gitHub: 'https://github.com/ElijahSMIAEL/gamers-assemble',
-    image: '../Images/GamersAssemble.png',
+    image: '../Images/gassWorkPrev.png',
     description: 'A group finding, MEN-Stack application for gamers'
   }
 ]
